@@ -74,10 +74,7 @@ public class RestServiceBase
             {
                 _cacheBarrel.Add(cleanCacheKey, json, TimeSpan.FromHours(cacheDuration));
             }
-            catch
-            {
-
-            }
+            catch { }
         }
         //Return the result
         return json;
