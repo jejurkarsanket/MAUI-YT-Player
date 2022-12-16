@@ -7,7 +7,7 @@ namespace TubePlayer.Models
         public static string EmailAddress = @"tubeplayer@Apps.com";
         public static string ApplicationId = "TubePlayer.App";
         public static string ApiServiceURL = @"https://youtube.googleapis.com/youtube/v3/";
-        public static string ApiKey = @"AIzaSyDrsdhbrh4zaKJwXweGfJwtIqHGaL7YFns";
+        public static string ApiKey = @"";
 
         public static uint MicroDuration { get; set; } = 100;
         public static uint SmallDuration { get; set; } = 300;
