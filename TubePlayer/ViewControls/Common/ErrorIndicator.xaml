@@ -5,6 +5,24 @@
     x:Class="TubePlayer.ViewControls.Common.ErrorIndicator"
     IsVisible="False"
     Padding="48,12">
-   
-    
+
+    <Image 
+        x:Name="imgErrror"
+        Source="{Binding ErrorImage, Mode=OneWay}"
+        HorizontalOptions="Center"
+        WidthRequest="64"
+        HeightRequest="64"
+        Aspect="AspectFit"/>
+    <Label 
+        Margin="0,12,0,0"
+        Text="Uh-Oh!"
+        Style="{StaticResource MediumLightText18}"
+        HorizontalOptions="Center"
+        HorizontalTextAlignment="Center"/>
+    <Label
+        x:Name="lblErrorText"
+        Style="{StaticResource RegularLightText14}"
+        LineBreakMode="WordWrap"
+        HorizontalOptions="Center"
+        HorizontalTextAlignment="Center"/>
 </VerticalStackLayout>
