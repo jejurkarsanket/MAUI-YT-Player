@@ -1,4 +1,5 @@
-﻿#if WINDOWS
+﻿// This File contains Major App configurations during loading time. App can decide window orientattion/ Dimensions based on device type at Runtime.
+#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Windows.Graphics;
