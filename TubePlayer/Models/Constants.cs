@@ -1,4 +1,4 @@
-﻿
+﻿//Constants File holds all constant/ ReadOnly data.
 namespace TubePlayer.Models
 {
     public class Constants
