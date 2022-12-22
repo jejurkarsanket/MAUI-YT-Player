@@ -9,6 +9,7 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
+				//Set configurations for custom font.
 				fonts.AddFont("FiraSans-Light.ttf", "RegularFont");
 				fonts.AddFont("FiraSans-Medium.ttf", "MediumFont");
 			});
