@@ -36,7 +36,7 @@ public partial class ErrorIndicator : VerticalStackLayout
 	}
 
 	private static void SetErrorText(BindableObject bindable, object oldValue, object newValue) =>
-		(bindable as ErrorIndicator).lblErrorText.Text = (string) newValue;
+		(bindable as ErrorIndicator).lblErrorText.Text = (string)newValue;
 
 	public static readonly BindableProperty ErrorImageProperty = BindableProperty.Create(
 		"Errorimage",
