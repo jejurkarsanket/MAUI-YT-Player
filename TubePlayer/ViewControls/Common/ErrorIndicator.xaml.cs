@@ -1,5 +1,6 @@
 namespace TubePlayer.ViewControls.Common;
 
+//Inherit from Vertical Stack Layout
 public partial class ErrorIndicator : VerticalStackLayout
 {
 	public static BindableProperty IsErrorProperty = BindableProperty.Create(
@@ -17,6 +18,7 @@ public partial class ErrorIndicator : VerticalStackLayout
 	  set => this.SetValue(IsErrorProperty, value); 
 	}
 
+	//Control for Setting whether Error is occured or not.
 	private static void SetIsError(BindableObject bindable, object oldValue, object newValue) =>
 		(bindable as ErrorIndicator).IsVisible = (bool)newValue;
 
@@ -35,6 +37,7 @@ public partial class ErrorIndicator : VerticalStackLayout
 		set => this.SetValue(ErrorTextProperty, value);
 	}
 
+	//Control for setting Error Text
 	private static void SetErrorText(BindableObject bindable, object oldValue, object newValue) =>
 		(bindable as ErrorIndicator).lblErrorText.Text = (string)newValue;
 
@@ -51,7 +54,8 @@ public partial class ErrorIndicator : VerticalStackLayout
 		get => (ImageSource)this.GetValue(ErrorImageProperty);
 		set => this.SetValue(ErrorImageProperty, value);
 	}
-
+	
+	//Control for setting Error Image
 	private static void SetErrorImage(BindableObject bindable, object oldValue, object newValue) =>
 		(bindable as ErrorIndicator).imgErrror.Source = (ImageSource)newValue;
 
