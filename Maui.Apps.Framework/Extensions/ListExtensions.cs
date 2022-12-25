@@ -2,6 +2,7 @@
 {
     static class ListExtensions
     {
+        //Add Range in Collection
         public static void AddRange<T>(this ObservableCollection<T> collection, IEnumerable<T> newItems, bool clearFirst = false)
         {
             if(clearFirst)
@@ -10,6 +11,7 @@
             newItems.ForEach(newItem => collection.Add(newItem));
         }
 
+        //Randomize the Collection
         public static IEnumerable<T> Randomize<T>(this IEnumerable<T> source)
         {
             Random rnd = new Random();
