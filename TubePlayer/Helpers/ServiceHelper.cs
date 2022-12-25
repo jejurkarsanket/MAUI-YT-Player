@@ -2,6 +2,7 @@
 {
     public static class ServiceHelpers
     {
+        //Select services based on Platfrom Type
         public static TService GetService<TService>() =>
             Current.GetService<TService>();
         public static IServiceProvider Current =>
