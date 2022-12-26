@@ -1,6 +1,7 @@
 ﻿//Constants File holds all constant/ ReadOnly data.
 namespace TubePlayer.Models
 {
+    //Constants file for storing Read Only data.
     public class Constants
     {
         public static string ApplicationName = "Tube Player";

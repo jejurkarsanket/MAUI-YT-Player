@@ -1,6 +1,7 @@
 ﻿
 namespace TubePlayer.Models
 {
+    //Model for You Tube
     public class VideoSearchResult
     {
 

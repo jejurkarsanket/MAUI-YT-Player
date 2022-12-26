@@ -1,6 +1,7 @@
 ﻿
 namespace Maui.Apps.Framework.MVVM
 {
+    //State of a View Model on particular time.
     public partial class ViewModelBase : ObservableObject
     {
         [ObservableProperty]
