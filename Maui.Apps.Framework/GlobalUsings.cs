@@ -1,4 +1,5 @@
-﻿global using MonkeyCache;
+﻿//use global usings for defining all headers/ packages in a single file
+global using MonkeyCache;
 global using Maui.Apps.Framework.Exceptions;
 global using Maui.Apps.Framework.Extensions;
 global using System.Text.Json;
