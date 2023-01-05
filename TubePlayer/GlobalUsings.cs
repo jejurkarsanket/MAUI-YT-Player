@@ -2,4 +2,9 @@
 global using TubePlayer.Views;
 global using System.Text.Json.Serialization;
 global using TubePlayer.Models;
+global using Maui.Apps.Framework.MVVM;
+global using Android.Net.Wifi.Aware;
+global using CommunityToolkit.Mvvm.Input;
+global using TubePlayer.IServices;
+
 

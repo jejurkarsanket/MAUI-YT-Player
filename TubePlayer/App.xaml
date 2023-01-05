@@ -116,7 +116,6 @@
         <!-- Icon Styles -->
         <Style TargetType="ImageButton" x:Key="IconButtonStyle">
             <Setter Property="HeightRequest" Value="32" />
-            <Setter Property="HeightRequest" Value="32"/>
             <Setter Property="WidthRequest" Value="32"/>
             <Setter Property="Padding" Value="{OnPlatform Android=4, Default=6}"/>
             <Setter Property="BackgroundColor" Value="Transparent"/>
