@@ -29,6 +29,24 @@ public partial class LoadingIndicator : VerticalStackLayout
 		control.IsVisible = (bool)newValue;
 		control.actIndicator.IsRunning = (bool)newValue;
 	}
+
+	public static readonly BindableProperty LoadingTextProprty = BindableProperty.Create(
+		"Loadingtext",
+		 typeof(string),
+		 typeof(LoadingIndicator),
+		 string.Empty,
+		 BindingMode.OneWay,
+		 null,
+         SetLoadingText);
+
+	public string LoadingText
+	{
+		get => (string)this.GetValue(LoadingTextProprty);
+		set => this.SetValue(LoadingTextProprty, value);
+	}
+
+	private static void SetLoadingText(BindableObject bindable, object oldValue, object newValue) =>
+		(bindable as LoadingIndicator).lblLoadingText.Text = (string)newValue;
 	
 	public LoadingIndicator()
 	{
