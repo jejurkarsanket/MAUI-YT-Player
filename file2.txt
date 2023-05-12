@@ -1,0 +1,16 @@
+This is a sample file vim, Vim is a terminal based editor
+
+3
+
+
+333
+
+
+
+:wq
+
+ww
+--Insert--
+:wq
+:x
+
